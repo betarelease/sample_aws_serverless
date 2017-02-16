@@ -14,15 +14,15 @@ Resources:
           Properties:
             Path: /TimeResource
             Method: GET
-    ATimeFunction:
-      Type: AWS::Serverless::Function
-      Properties:
-        Handler: index.handler
-        Runtime: nodejs4.3
-        CodeUri: ./
-        Events:
-          MyTimeApi:
-            Type: Api
-            Properties:
-              Path: /ATimeResource
-              Method: GET
+  ATimeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs4.3
+      CodeUri: ./
+      Events:
+        MyTimeApi:
+          Type: Api
+          Properties:
+            Path: /ATimeResource
+            Method: GET
