@@ -1,0 +1,9 @@
+{
+  "name": "sample_lambda",
+  "version": "1.0.0",
+  "description": "Lambda function for sample time api",
+  "main": "index.js",
+  "dependencies": {
+    "time": "*"
+  }
+}
