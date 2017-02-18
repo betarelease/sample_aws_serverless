@@ -8,18 +8,25 @@ Resources:
       Handler: index.handler
       Runtime: nodejs4.3
       CodeUri: ./
+      Environment:
+        Variables:
+          HOST: LOCAL_HOST
       Events:
         MyTimeApi:
           Type: Api
           Properties:
             Path: /TimeResource
             Method: GET
+
   ATimeFunction:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
       Runtime: nodejs4.3
       CodeUri: ./
+      Environment:
+        Variables:
+          HOST: A_HOST
       Events:
         MyTimeApi:
           Type: Api

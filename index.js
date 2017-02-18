@@ -5,6 +5,6 @@ exports.handler = (event, context, callback) => {
     currentTime.setTimezone("America/Los_Angeles");
     callback(null, {
         statusCode: '200',
-        body: HOST + 'The time in Mountain View is: ' + currentTime.toString(),
+        body: HOST + ' The time in Mountain View is: ' + currentTime.toString(),
     });
 };
